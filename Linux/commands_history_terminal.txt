@@ -1,0 +1,28 @@
+    1  cat > Pets.txt << EOF
+    Собаки
+    Кошки
+    Хомяки
+    EOF
+    2  cat > PackAnimals.txt << EOF
+    Лошади
+    Верблюды
+    Ослы
+    EOF
+    3  cat Pets.txt PackAnimals.txt > HumanFriends.txt
+    4  cat HumanFriends.txt
+    5  ls
+    6  mkdir FinalControlWork
+    7  mv FriendsHuman.txt FinalControlWork/
+    8  cd FinalControlWork
+    9  sudo apt update
+   10  sudo apt install software-properties-common
+   11  sudo add-apt-repository 'deb http://repo.mysql.com/apt/ubuntu/ focal mysql-8.0'
+   12  sudo apt update
+   13  sudo apt-get -d --download-only install mysql-server
+   14  cd /var/cache/apt/archives
+   15  sudo dpkg -i mysql-server_8.0.21-0ubuntu0.20.04.1_amd64.deb
+   16  sudo dpkg -r --purge mysql-server-8.0
+   17  history > commands_history_terminal.txt
+   18  mv commands_history_terminal.txt ~/FinalControlWork/
+   19  nano commands_history_terminal.txt
+   
